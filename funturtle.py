@@ -1,4 +1,4 @@
-##import turtle
+import turtle
 ##turtle.shape('turtle')
 ##square=turtle.clone()
 ##square.shape('square')
@@ -41,6 +41,7 @@ def up():
     global direction
     direction=UP
     print("you pressed the up key")
+    turtle.pos(
     
 def down():
     global direction
@@ -48,12 +49,33 @@ def down():
     print("you pressed the down key")
 
 def left():
-          global direction
-          direction=LEFT
-          print("you pressed the left key")
+    global direction
+    direction=LEFT
+    print("you pressed the left key")
 def right():
-          global direction
-          direction=RIGHT
-          print("you pressed the right key")
+    global direction
+    direction=RIGHT
+    print("you pressed the right key")
+
+turtle.onkeypress(up,UP_ARROW)
+turtle.onkeypress(down,"Down")
+turtle.onkeypress(right,"Right")
+turtle.onkeypress(left,"Left")
+turtle.listen()
+turtle.mainloop()
+
+
+
           
+
+
+
+
+
+
+
+
+
+
+
 
